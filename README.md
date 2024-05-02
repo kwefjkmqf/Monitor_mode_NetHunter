@@ -19,9 +19,8 @@ If channel less then or equals 14, then frequency will be 2,4 GHz, if more then 
 For Xiaomi Redmi Note 12 Pro I even don't know what command we need
 
 ### About packets injections
-In this two kernels is have **radiotap header**. In first kernel he is locate in file [core/gen4m/os/linux/include/gl_kal.h](https://github.com/Saikrishna1504/kernel_xiaomi_mt6785/blob/udc/drivers/misc/mediatek/connectivity/wlan/core/gen4m/os/linux/include/gl_kal.h) on line [341](https://github.com/Saikrishna1504/kernel_xiaomi_mt6785/blob/udc/drivers/misc/mediatek/connectivity/wlan/core/gen4m/os/linux/include/gl_kal.h#341) - also 4 options, also packed. In second kernel he locate in file [core/gen4m/include/nic/radiotap.h](https://github.com/Coconutat/android_kernel_xiaomi_ruby_exp/blob/MUI14-KernelSU/drivers/misc/mediatek/connectivity/wlan/core/gen4m/include/nic/radiotap.h) - looks same with previous. In first kernel radiotap uses in file
->[nic/nic_rx.c](https://github.com/Saikrishna1504/kernel_xiaomi_mt6785/blob/udc/drivers/misc/mediatek/connectivity/wlan/core/gen4m/nic/nic_rx.c)
-
+In this two kernels is have **radiotap header**. In first kernel he is locate in file [core/gen4m/os/linux/include/gl_kal.h](https://github.com/Saikrishna1504/kernel_xiaomi_mt6785/blob/udc/drivers/misc/mediatek/connectivity/wlan/core/gen4m/os/linux/include/gl_kal.h) on line [341](https://github.com/Saikrishna1504/kernel_xiaomi_mt6785/blob/udc/drivers/misc/mediatek/connectivity/wlan/core/gen4m/os/linux/include/gl_kal.h#341) - also 4 options, also packed. In second kernel he locate in file [core/gen4m/include/nic/radiotap.h](https://github.com/Coconutat/android_kernel_xiaomi_ruby_exp/blob/MUI14-KernelSU/drivers/misc/mediatek/connectivity/wlan/core/gen4m/include/nic/radiotap.h) - looks same with previous. In both kernel radiotap uses in only one file
+`[nic/nic_rx.c](https://github.com/Saikrishna1504/kernel_xiaomi_mt6785/blob/udc/drivers/misc/mediatek/connectivity/wlan/core/gen4m/nic/nic_rx.c)`
 
 Those are needing more qualifed peoples in order to figure out in this
 
